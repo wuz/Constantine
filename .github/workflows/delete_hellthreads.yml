@@ -64,5 +64,5 @@ jobs:
             echo "Must check the confirm deletion checkbox."
             exit 1
           else
-            python delete_hellthreads.py ${TARGET_HANDLE}
+            python delete_hellthreads.py ${TARGET_HANDLE} --before-date $(date --date '-1 week' +'%Y-%M-%d')
           fi
